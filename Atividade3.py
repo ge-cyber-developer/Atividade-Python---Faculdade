@@ -17,6 +17,7 @@ i = 0
 maiormedia = 0
 menorsete = 0
 
+
 while i != -1:
   numeros.append(int(input('Digite um número: ')))
   i=numeros[j]
