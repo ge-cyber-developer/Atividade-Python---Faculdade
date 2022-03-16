@@ -4,13 +4,19 @@ _acima da média anual__, e em que mês elas ocorreram (mostrar o mês por exten
 
 
 
-meses_do_ano = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
-temperatura_media = []
+numero = 0
 
-for mes in range(0, len(meses_do_ano)):
-    temperatura_media.append(float(input('Digite a temperatura média de ' + meses_do_ano[mes] + ':' )))
-temperatura_media_anual = sum(temperatura_media)/len(temperatura_media)
+lista_numeros = []
+lista_numeros_impares = []
+lista_numeros_pares = []
 
-for mes in range(0, len(temperatura_media)):
-    if temperatura_media[mes] > temperatura_media_anual:
-        print (str(mes+1) + " - " + meses_do_ano[mes])
+for numero in range (1,20):
+    lista_numeros.append(int(input("Digite um número: ")))
+    if lista_numeros[numero] % 2 == 0:
+        lista_numeros_pares.append(lista_numeros[numero])
+    else :
+        lista_numeros_impares.append(lista_numeros[numero])
+
+print("lista com 20 números: " + str(lista_numeros))
+print("lista com números pares: " + str(lista_numeros_pares))
+print("lista com números impares: " + str(lista_numeros_impares))
