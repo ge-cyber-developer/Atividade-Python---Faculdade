@@ -30,6 +30,7 @@ print('\nNúmero total de números inseridos: '+str(len(numeros)))
 print('Os números digitados foram:',str(numeros))
 print('Números em ordem inversa um abaixo do outro:')
 
+
 numeros.reverse()
 
 for var in numeros:
